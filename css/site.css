@@ -1,0 +1,147 @@
+body{
+	padding:0;
+	margin:0;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+body#site-{
+	background: transparent url(../images/bg.png) no-repeat 0 100%;	
+}
+a { color:#DC594D; }
+a:hover{ color:#5C574C; }
+.clear_both{ clear:both; }
+ul li,
+ul{ list-style-type:none; }
+h1{
+color: #015C5E;
+margin-top: 0;
+font-size: 18px;
+border-bottom: 1px dotted;
+}
+#site_header{
+height: 100px;
+}
+#site_content{
+	width:920px;
+	margin:0 auto;
+	min-height:550px;
+	background: #fff;
+}
+#site_footer{
+	background:#84A0C9;
+	height:20px;
+	text-align:center;
+	color:#fff;
+}
+#site_footer a{
+	color:#fff;
+}
+#back_plate{
+	position:absolute; background:#BACAE0; 
+	width:100%;
+	top: 93px;
+	height: 43px;
+}
+.logo{
+	vertical-align: middle;
+}
+#site_header #site_name{
+	font-size:25px;
+	color:#3A1217;
+	text-shadow: 2px 2px #ccc;
+}
+#site_header span{
+	font-size:15px;
+	color:#999;
+}
+#site_logo{ display:inline; }
+.transparent {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+		
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=50);
+	
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.5;
+	
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.5;
+   
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.5;
+}
+#primary_navingation { margin-top:15px; text-align:right;}
+.submenu ul,
+#primary_navingation ul{ list-style-type:none; padding:0; margin:0; }
+#primary_navingation ul li { display:inline; padding:5px 15px; color:#fff; font-weight:bold; }
+#primary_navingation ul li { background:yellow; }
+#primary_navingation ul li.home { background:#0D96CD;}
+#primary_navingation ul li.contact { background:#BCB4AA;}
+#primary_navingation ul li.about { background:#5C574C;}
+#primary_navingation ul li.course { background:#DC594D;}
+#primary_navingation ul li.campus { background:#015C5E;}
+#primary_navingation ul li a { COLOR:white; text-decoration:none;}
+#primary_navingation ul li:hover{ border-bottom:2px solid black; }
+.call { background: transparent url(../images/call.png) no-repeat 0 0; padding:10px 10px 10px 39px; font-weight:bold;}
+#site_footer marquee{ font-weight: bold; font-size: 16px; color: white; padding:10px; }
+marquee {
+display: inline-block;
+overflow: -webkit-marquee;
+}
+marquee[Attributes Style] {
+height: 238px;
+width: 198px;
+-webkit-marquee-increment: 2px;
+-webkit-marquee-speed: 50ms;
+-webkit-marquee-direction: up;
+}
+
+#secondary_navingation {
+	width: 250px;
+	padding:10px;
+}
+.submenu { text-align:center; margin-bottom:10px; border-top: 1px solid #96ADD2; margin-top: 15px;}
+.submenu div.left{ width:225px; float:left; }
+.submenu ul li { list-style-type:circle; text-align:left; margin-left: 20px; line-height: 20px;}
+.submenu h2 { font-size:14px; background: transparent url(../images/bullet.png) no-repeat 0 50%; margin:15px 0px 10px 0px; padding-left: 20px; text-align:left;}
+div.management img {
+border: 1px solid;
+margin: 5px 10px;
+padding: 5px;
+}
+.course{
+background: url(../images/courses.jpg) no-repeat 50% 100%;
+}
+ul#left-ul {
+margin: 0px;
+list-style: none;
+padding: 0px;
+}
+ul#left-ul li {
+border-bottom: solid 1px #C8C8C8;
+border-top: solid 1px #C8C8C8;
+line-height: 44px;
+font-weight: 700;
+padding: 0 0 0 0px;
+}
+ul#left-ul li a {
+color: #5B5B5B;
+font-weight: 700;
+text-decoration:none;
+}
+ul#left-ul li a img {
+	vertical-align: middle;
+	margin-right:10px;
+}
+ul#left-ul li.top_border_none{ border-top:none; }
