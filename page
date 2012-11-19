@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Site Title </title>
+		
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="title" content="site"/>
+		<meta name="description" content="site"/>
+		<meta name="keywords" content="site"/>
+		
+		<LINK REL="STYLESHEET" HREF="css/site.css" TYPE="text/css">
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->		 
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js'></script>
+		<script type='text/javascript' src="js/config.js"></script>
+	</head>
+	<body id="site-">
+		<div class="transparent" id="back_plate"></div>
+		<div id="site_content">
+			<div style="padding:5px 10px; position:relative;">
+				<div id="site_header">
+					<div style="padding:15px 0px 0px 0px">
+						<strong> <img id="site_logo" src="images/logo.png"/> <span id="site_name">Site Name</span> </strong><br>
+						<div id="primary_navingation"></div>
+					</div>
+				</div>
+				<div id="slider">
+					<h1><div id="page_title"> Page Title </div></h1>
+					<div class="breadcrumb"> <a href="index.html"> Home </a> >> <a href="/page?home" class="link_page">&nbsp;</a> </div>
+				<script>
+				$(document).ready(function() {
+					if ( urlParams.page ) {
+						var page = urlParams.page;
+						var page_obj = site.pages[page];
+						var content_file = page_obj.url;
+						var page_title = page_obj.title;
+						var iframeHeight = page_obj.height || 450;
+						if ( content_file == undefined ) {
+							window.location.href = site.home_page;
+						}
+						else {
+							var iframe = '<iframe id="Icontent" width="533" height="'+ iframeHeight +'" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="' + content_file + '"></iframe>';
+							$('#page_content').html( iframe );
+							$(document).find('#page_title').html( page_title );
+							$('.link_page').attr('src', '/page?' + page );
+							$('.link_page').html( page_title );
+						}
+					}
+					else {
+						window.location.href = site.home_page;
+					}
+				});
+				</script>
+				</div>
+				
+				<div style="margin-top:10px;">
+					<div id="secondary_navingation" style="float:left; margin-right:10px;"></div>
+					<div id="page_content" style="float:left;width:533px;"></div>
+					<div style="clear:both"></div>										
+				</div>
+
+		</div>
+		<div style="height:50px;"></div>
+		<div id="site_footer">
+			<div> Design & Maintained by: <span class="developer_info"><a href="http://example.com"> Example.com</a> </span> </div>
+		</div>				
+		<script type='text/javascript' src="js/script.js"></script>
+		<script type='text/javascript' src="js/init.js"></script>
+	</body>
+</html>
